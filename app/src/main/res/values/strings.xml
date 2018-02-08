@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GitHubSearch</string>
+    <string name="search_hint">Enter your query</string>
+    <string name="user_profile_content_description">GitHub User Profile Image</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userPhotoIv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@sample/search.json/items/name" />
+
+    <TextView
+        android:id="@+id/descriptionTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/titleTv"
+        app:layout_constraintStart_toStartOf="@+id/titleTv"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"
+        tools:text="@sample/search.json/items/description" />
+
+    <TextView
+        android:id="@+id/urlTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/titleTv"
+        app:layout_constraintStart_toStartOf="@+id/descriptionTv"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTv"
+        tools:text="@sample/search.json/items/html_url" />
+
+    <ImageView
+        android:id="@+id/userPhotoIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/user_profile_content_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
+</android.support.constraint.ConstraintLayout>
